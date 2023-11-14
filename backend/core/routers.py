@@ -7,9 +7,6 @@ router = routers.SimpleRouter()
 router.register(r'auth/signup', SignUpViewSet, basename='auth-signup')
 router.register(r'auth/signin', SignInViewSet, basename='auth-signin')
 router.register(r'auth/refresh', RefreshViewSet, basename='auth-refresh')
-# router.register(r'auth/forgotpassword', ForgotPasswordViewSet, basename='auth-forgotpassword')
-# router.register(r'auth/forgotpassword/<str:token>/', ResetPasswordViewSet, basename='auth-resetpassword')
-
 
 router.register(r'user', UserViewSet, basename='user')
 urlpatterns = [
